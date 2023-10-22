@@ -1,0 +1,41 @@
+body{
+    background-color:rgb(114, 0, 0) ;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin:80px;
+    align-items: center;
+    grid-gap:30px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+img{
+    object-fit: cover;
+}
+
+.grid>article{
+     box-shadow:10px 5px 5px 0px black;
+     border-radius: 20px;
+     text-align: center;
+     background: whitesmoke;
+     width: 300px;
+     
+}
+
+.grid > article img{
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+}
+
+.grid>article:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width:1000px){
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
